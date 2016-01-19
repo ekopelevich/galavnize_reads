@@ -22,3 +22,9 @@ article {
     text-align: center;
   }
 }
+
+label, input {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
