@@ -3,7 +3,6 @@ var router = express.Router();
 
 var knex = require('../db/knex');
 
-/* GET books listing. */
 router.get('/', function(req, res) {
   // knex('books').select('authors.name', 'books.*').then(function(books){
   knex('books').select().then(function(books){
